@@ -13,8 +13,8 @@ export const useLocalStorage = (key, initialValue) => {
         //save state
         setStoreValue(value)
         //save to local storage
-        window.localStoroage.setItem(key, JSON.stringify(value))
+        window.localStorage.setItem(key, JSON.stringify(value))
         
     }
-    return [storedValue]
+    return [storedValue, setValue]
 }
